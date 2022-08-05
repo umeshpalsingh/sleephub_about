@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+
+        <!-- Bootstrap CDN -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+            crossorigin="anonymous"
+            />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Open+Sans:wght@300;400;500;600;700&family=Poppins&display=swap"
+            rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"
+            />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="about.css">
+    </head>
+    <body>
+
+        <!----- Login Model----------------------------------------------->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login / Sign In</h5>
+                        <p class="text-secondary mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="modal-btn" type="button" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times fa-lg"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/images/about-img1.jpg">
+                            <div>
+                                <input class="input-field" type="email" placeholder="Email Address" required>
+                                <span class="modal-mail-icon-1"><i style="color: #555;" class="fas fa-envelope"></i></span>
+                            </div>
+                            <div>
+                                <input class="input-field" type="password" placeholder="Password" required>
+                                <span class="modal-lock-icon-1"><i style="color: #555;" class="fas fa-lock"></i></span>
+                            </div>
+                            <div class="forgot-box mt-2 mb-5">
+                                <div>
+                                    <input type="checkbox">
+                                    <a class="forgot-linkOne" href="#">Keep me signed in</a>
+                                </div>
+                                <div>
+                                    <a class="forgot-linkTwo" href="#">Forgot Password?</a>
+                                </div>
+                            </div>
+                            <input class="login-btn" type="submit" value="LOG IN">
+                            <button class="cancel-btn" type="button" data-bs-dismiss="modal" aria-label="Close">CANCEL</button>
+                            <div class="forgot-register">
+                                Don't Have An Account?
+                                <a href="#">Register Here</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----- Register Model----------------------------------------------->
+
+        <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Register / Sign Up</h5>
+                        <p class="text-secondary mb-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <button class="modal-btn" type="button" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times fa-lg"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/">
+                            <div>
+                                <input class="input-field" type="text" placeholder="Your Name*" required>
+                                <span class="modal-user-icon"><i style="color: #555;" class="fas fa-user"></i></span>
+                            </div>
+                            <div>
+                                <input class="input-field" type="email" placeholder="Email Address*" required>
+                                <span class="modal-mail-icon-2"><i style="color: #555;" class="fas fa-envelope"></i></span>
+                            </div>
+                            <div>
+                                <input class="input-field" type="password" placeholder="Password*" required>
+                                <span class="modal-lock-icon-2"><i style="color: #555;" class="fas fa-lock"></i></span>
+                            </div>
+                            <div>
+                                <input class="input-field" type="password" placeholder="Confirm Password*" required>
+                                <span class="modal-lock-icon-3"><i style="color: #555;" class="fas fa-lock"></i></span>
+                            </div>
+                            <p class="register-policy my-4">By clicking the "Sign Up" button, you are agree to our <a href="">Terms of Use</a>
+                                and <a href="">Privacy Policy</a>.
+                            </p>
+                            <input class="login-btn" type="submit" value="SIGN UP">
+                            <button class="cancel-btn" type="button" data-bs-dismiss="modal" aria-label="Close">CANCEL</button>
+                            <div class="forgot-register">
+                                Don't Have An Account?
+                                <a href="#">Log In</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----- Top Banner----------------------------------------------->
+        <div class="top-banner text-white pt-3"
+            style="background-color:
+            #15395b;">
+            <p class="me-auto top_banner_fsize top-banner-contact-margin">Contact
+                Us On
+                508-733-5951 Or akinkoko@aol.com</p>
+            <p class="top_banner_fsize top-banner-login"><i class="fas fa-user"></i>
+                <a class="text-white text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a>
+
+                / <a class="text-white text-decoration-none" href="#" data-bs-toggle="modal" data-bs-target="#Modal">Register</a>
+            </p>
+            <p class="ms-4 top_banner_fsize top-banner-cart-margin">Your
+                Cart: 0
+                Items -
+                $0.00</p>
+        </div>
+
+
+        <!----- Navbar----------------------------------------------->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img
+                        class="sleephub-logo"
+                        src="./images/main-logo.png"
+                        alt="Sleephub"
+                        />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                        <a
+                            class="nav-link text-uppercase fw-semibold"
+                            aria-current="page"
+                            href="/index.html">Home
+                        </a>
+                        <a class="nav-link text-uppercase fw-semibold" href="/about.html">About
+                        </a>
+                        <a class="nav-link text-uppercase fw-semibold" href="#">Products
+                        </a>
+                        <a class="nav-link text-uppercase fw-semibold" href="#">Blog</a>
+                        <a class="nav-link text-uppercase fw-semibold" href="#">Contact
+                        </a>
+                        <a class="nav-btn" href="#">Book a consultation</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="about-banner">
+            <div>
+                <h2>About Us</h2>
+                <p class="my-4 mb-5">Get your life back, lead a fresh new life</p>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <section class="ab-section">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="text-uppercase text-info fw-semibold">About Us</h3>
+                    <h2>Lorem Ipsum Dolor Sit Amet consectetur adipisicing</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, cupiditate numquam cumque assumenda eveniet
+                        libero
+                        qui consequuntur nemo sit quis distinctio! Expedita voluptates rem fugit libero deleniti labore magni reprehenderit?
+                        quisquam corrupti facere quos culpa natus, reiciendis voluptas!
+                    </p>
+                    <div class="feature-box">
+                        <h4>Lorem Ipsum Dolor Sit Amet</h4>
+                        <h4>Lorem Ipsum Dolor Sit Amet</h4>
+                        <h4>Lorem Ipsum Dolor Sit Amet</h4>
+                    </div>
+                    <button>Book a consultation</button>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ab-img-box">
+                        <div class="ab-img-box-1">
+                            <img class="ab-img-1" src="./images/about-img1.jpg" alt="ab-img-1">
+                        </div>
+                        <div class="ab-img-box-2">
+                            <img class="ab-img-2" src="./images/blog-img-1.jpg" alt="ab-img-2">
+                        </div>
+                        <div class="ab-img-box-3">
+                            <h4>Medical Psychology Since 2001</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="nsle-section">
+            <div class="nsle-img-box">
+                <img class="nsle-img" src="./images/nsle-img.jpg" alt="nsle-img">
+                <div class="nsle-img-text">
+                    <h4>Nationalwide Services Local Expertise</h4>
+                    <h1>Lorem Ipsum Dolor Sit Amet consectetur adipisicing</h1>
+                    <button>Get started now</button>
+                </div>
+            </div>
+            <div class="nsle-txt-box">
+                <div class="row">
+
+                    <div class="col-lg-4">
+                        <h3 class="mb-4 fw-semibold">We Seek For</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eum amet suscipit voluptatem assumenda maiores,
+                            consectetur
+                            animi. Amet suscipit temporibus eligendi quisquam. dolore ullam esse similique cupiditate officia quae tempore. Hic
+                            repellendus et sunt voluptates nostrum accusamus veritatis.
+                        </p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, doloremque maiores magnam quaerat inventore
+                            ipsum
+                            at est commodi, ex aperiam amet nisi cupiditate, omnis minus dolore! Est id optio asperiores numquam provident eius ex
+                            amet. ullam pariatur necessitatibus rem fugiat quam deserunt?</p>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="ab-icon-box">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="ab-icon icon-1">
+                                        <img src="./images/wwd-img2.png" alt="ab-icon">
+                                        <h6>Online Therapy</h6>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="ab-icon icon-2">
+                                        <img src="./images/wwd-img3.png" alt="ab-icon">
+                                        <h6>Group Therapy</h6>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="ab-icon icon-3">
+                                        <img src="./images/wwd-img4.png" alt="ab-icon">
+                                        <h6>Individual Therapy</h6>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="ab-icon icon-4">
+                                        <img src="./images/wwd-img5.png" alt="ab-icon">
+                                        <h6>Support</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-box">
+                                <h5 class="d-inline-block">How does it work?</h5>
+                                <div>
+                                    <span onclick="showMinus()" id="acPlus" style="color: #15395b;" class="collapsed" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        <i class="fas fa-plus-circle fa-2x"></i>
+                                    </span>
+                                    <span onclick="showPlus()" id="acMinus" style="color: #15395b;" class="collapsed" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne"
+                                        aria-expanded="false" aria-controls="collapseOne">
+                                        <i class="fas fa-minus-circle fa-2x"></i>
+                                    </span>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga eos repudiandae quae optio, culpa
+                                            et
+                                            mollitia! Quod velit voluptas vero corporis tempore explicabo!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-box">
+                                <h5 class="d-inline-block">How do you assure growth?</h5>
+                                <div>
+                                    <span style="color: #15395b;" class="collapsed" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <i class="fas fa-plus-circle fa-2x"></i>
+                                    </span>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus sequi deleniti totam ducimus
+                                            excepturi, corrupti, quae at eligendi. Libero aliquid quo sit id molestiae
+                                            sequi porro.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-box">
+                                <h5 class="d-inline-block">What services do you provide?</h5>
+                                <div>
+                                    <span style="color: #15395b;" class="collapsed" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <i class="fas fa-plus-circle fa-2x"></i>
+                                    </span>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolor officiis quisquam autem
+                                            consectetur totam incidunt explicabo velit.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-box">
+                                <h5 class="d-inline-block">How to get a free quote?</h5>
+                                <div>
+                                    <span style="color: #15395b;" class="collapsed" type="button"
+                                        data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        <i class="fas fa-plus-circle fa-2x"></i>
+                                    </span>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolor officiis quisquam autem
+                                            laboriosam architecto in, explicabo velit
+                                            dolorum magnam quia perspiciatis!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!----- Blog Section ----------------------------------------------->
+        <section class="blog-section">
+            <h3 class="fw-semibold text-center text-uppercase text-info">Blog</h3>
+            <h2 class="fw-semibold text-center mt-4 mb-5">Latest News and Updates</h2>
+            <div class="container-fluid">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="blog-card">
+                            <div class="blog-thumbnail">
+                                <img src="./images/blog-img-4.jpg" alt="image">
+                                <span>11 Sep 2020</span>
+                            </div>
+                            <div class="blog-text">
+                                <h4>52 Ways: What Motivates Others Who Threaten A
+                                    Relationship?</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. veniam debitis consequatur
+                                    nobis quibusdam rerum soluta totam dolor...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="blog-card">
+                            <div class="blog-thumbnail">
+                                <img src="./images/blog-img-2.jpg" alt="image">
+                                <span>15 Dec 2020</span>
+                            </div>
+                            <div class="blog-text">
+                                <h4>Get the most out of your work day</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. veniam debitis consequatur
+                                    nobis quibusdam rerum soluta totam dolor...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="blog-card">
+                            <div class="blog-thumbnail">
+                                <img src="./images/blog-img-1.jpg" alt="image">
+                                <span>10 Jan 2020</span>
+                            </div>
+                            <div class="blog-text">
+                                <h4>Looking for help is sign of strength</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. veniam debitis consequatur
+                                    nobis quibusdam rerum soluta totam dolor...
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-content-center justify-content-center mt-5">
+                <a href="#" class="product-btn">Read All</a>
+            </div>
+        </section>
+
+
+        <!-----Testimonial Section ----------------------------------------------->
+        <section class="testimonial-section">
+            <div class="row gx-0">
+                <div class="col-md-6 col-12">
+                    <div class="newsletter-box">
+                        <h3 class="text-uppercase mb-4">Newsletter</h3>
+                        <h2 class="text-white mb-4 news-main">
+                            Subscribe to our <br> Newsletter for latest news, updates
+                            and more.
+                        </h2>
+                        <p class="mb-5 news-des">Lorem ipsum dolor sit mit amet,
+                            consectetur adipisicing elit tempore labore ipsum libero.</p>
+                        <form>
+                            <input class="news-email" type="email" name="email" id="email" placeholder="Enter your email" autocomplete="off">
+                            <input class="news-submit" type="submit" value="SUBSCRIBE">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="test-box">
+                        <h3 class="text-info text-uppercase mb-4">Testimonials</h3>
+                        <h2>What our clients say!</h2>
+                        <div class="test-slider">
+                            <div class="swiper testSwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="re-slide">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum laborum nemo ut maiores
+                                                repellendus recusandae rerum
+                                                neque voluptates.
+                                            </p>
+                                            <div class="star-box">
+                                                <i class="fas fa-star fa-lg" style="color: #0fb8cd"></i>
+                                                <i class="fas fa-star fa-lg" style="color: #0fb8cd"></i>
+                                                <i class="fas fa-star fa-lg" style="color: #0fb8cd"></i>
+                                                <i class="fas fa-star fa-lg" style="color: #0fb8cd"></i>
+                                                <i class="far fa-star fa-lg" style="color: #0fb8cd"></i>
+                                            </div>
+                                        </div>
+                                        <img class="review-bg" src="./images/review-bg.png" alt="image">
+                                        <div class="test-name-pack">
+                                            <h5>Erika Dean</h5>
+                                            <p>Budapest</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="re-slide">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum laborum nemo ut maiores
+                                                repellendus recusandae rerum
+                                                neque voluptates.
+                                            </p>
+                                            <div class="star-box">
+                                                <i class="fas fa-star fa-lg" style="color: #0fb8cd"></i>
+                                                <i class="fas fa-star fa-lg" style="color: #0fb8cd"></i>
+                                                <i class="fas fa-star fa-lg" style="color: #0fb8cd"></i>
+                                                <i class="far fa-star fa-lg" style="color: #0fb8cd"></i>
+                                                <i class="far fa-star fa-lg" style="color: #0fb8cd"></i>
+                                            </div>
+                                        </div>
+                                        <img class="review-bg" src="./images/review-bg.png" alt="image">
+                                        <div class="test-name-pack">
+                                            <h5>Lisa Samson</h5>
+                                            <p>Miskolc</p>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="re-slide">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum laborum nemo ut maiores
+                                                repellendus recusandae rerum
+                                                neque voluptates.
+                                            </p>
+                                            <div class="star-box">
+                                                <i class="fas fa-star fa-lg" style="color: #0fb8cd"></i>
+                                                <i class="fas fa-star fa-lg" style="color: #0fb8cd"></i>
+                                                <i class="fas fa-star fa-lg" style="color: #0fb8cd"></i>
+                                                <i class="far fa-star fa-lg" style="color: #0fb8cd"></i>
+                                                <i class="far fa-star fa-lg" style="color: #0fb8cd"></i>
+                                            </div>
+                                        </div>
+                                        <img class="review-bg" src="./images/review-bg.png" alt="image">
+                                        <div class="test-name-pack">
+                                            <h5>Jeff Bell</h5>
+                                            <p>Szeged</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-paginations"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer text-white">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-col-1">
+                        <img class="mb-4" src="./images/footer-logo.png" alt="sleephub">
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. In voluptatem official modi
+                            voluptatum.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-col-2">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="#">Membership</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-col-3">
+                        <h2>Contact Us</h2>
+                        <p>
+                            C/O Medical Psychotherapy LLC
+                            209 West Central Street,
+                            Unit 209, Natick
+                            MA 01760
+                        </p>
+                        <p>Call <a href="tel:508-733-5951">508-733-5951</a> </p>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="footer-col-4">
+                        <a class="footer-mail" href="mailto:akinkoko@aol.com">akinkoko@aol.com</a>
+                        <ul class="footer-icons">
+                            <li><a href="#"><i class="fab fa-facebook-f fa-lg"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube fa-lg"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-9">
+                    <p class="copyright">
+                        Copyright © 2021 Sleep Solution Hub. All Rights Reserve. Designed and Developed By Ogrelogic. Privacy Policy | Terms
+                        Of Use.
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="pay-logo-box">
+                        <img class="pay-logo" src="./images/footer-img-1.png" alt="pay_logo">
+                        <img class="pay-logo" src="./images/footer-img-2.png" alt="pay_logo">
+                        <img class="pay-logo" src="./images/footer-img-3.png" alt="pay_logo">
+                        <img class="pay-logo" src="./images/footer-img-4.png" alt="pay_logo">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <script>
+            document.getElementById('acPlus').style.display = 'none';
+            function showMinus() {
+                document.getElementById('acMinus').style.display = 'block'
+            }
+            function showPlus() {
+                document.getElementById('acMinus').style.display = 'none';
+                document.getElementById('acPlus').style.display = 'block';
+            }
+        </script>
+        <!-- Bootstrap Script -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous">
+        </script>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Testimonial Section Slider Script -->
+        <script>
+            var swiper = new Swiper(".testSwiper", {
+              spaceBetween: 30,
+              centeredSlides: true,
+              autoplay: {
+                delay: 2500,
+                disableOnInteraction: false
+              },
+              pagination: {
+                el: ".swiper-paginations",
+                clickable: true
+              }
+            });
+        </script>
+    </body>
+</html>
